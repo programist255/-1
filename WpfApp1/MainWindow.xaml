@@ -5,28 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Склопакети" Height="332.4" Width="600">
+        Title="Авіарейси" Height="332.4" Width="600">
     <Grid Margin="2,0,0,0" Height="299" VerticalAlignment="Top" HorizontalAlignment="Left" Width="588">
         <Button Content="Button" HorizontalAlignment="Left" Margin="61,372,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label Content="Розміри вікна" FontSize="15" HorizontalAlignment="Left" Margin="23,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.966,0.438"/>
-        <Label Content="Ширина:" FontSize="13" HorizontalAlignment="Left" Margin="33,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.441,-0.333"/>
-        <Label Content="Висота:" FontSize="13" HorizontalAlignment="Left" Margin="41,111,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.068,0.195"/>
-        <TextBox Name="Width" HorizontalAlignment="Left" Height="23" Margin="122,80,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <Label Content="Матеріал:" HorizontalAlignment="Left" Margin="55,156,0,0" VerticalAlignment="Top"/>
-        <Label Content="Склопакет" FontSize="15" Margin="415,23,85,237" />
-        <TextBox Name="Height" HorizontalAlignment="Left" Height="23" Margin="122,115,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <RadioButton Name="One" IsChecked="True" Content="Однокамерний" HorizontalAlignment="Left" Margin="411,80,0,0" VerticalAlignment="Top"/>
-        <RadioButton Name="Two" Content="Двокамерний" HorizontalAlignment="Left" Margin="411,111,0,0" VerticalAlignment="Top"/>
-        <CheckBox  Name="Wind" Content="Підвіконня" HorizontalAlignment="Left" Margin="425,156,0,0" VerticalAlignment="Top"/>
-        <Label Content="Вартість:" FontSize="18" HorizontalAlignment="Left" Margin="42,213,0,0" VerticalAlignment="Top"/>
-        <Label Name="Suma" Content="0 грн." FontSize="18" HorizontalAlignment="Left" Margin="123,213,0,0" VerticalAlignment="Top"/>
-        <Button Click="Button_Click" Content="Розрахувати" FontSize="15" HorizontalAlignment="Left" Margin="433,213,0,0" VerticalAlignment="Top" Width="98" Height="34"/>
-        <StackPanel Margin="10,156,0,108" >
-
-            <ComboBox Name="Combo" Margin="121,0,372.4,0" >
-                <ComboBoxItem IsSelected="True" Content="Дерево"/>
-                <ComboBoxItem Content="Метал"/>
-                <ComboBoxItem Content="Металопластик"/>
+        <Label Content="Замовлення" FontSize="15" HorizontalAlignment="Left" Margin="42,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.966,0.438" Width="113"/>
+        <Label Content="Кількість днів" FontSize="13" HorizontalAlignment="Left" Margin="33,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.441,-0.333"/>
+        <TextBox Name="Width" HorizontalAlignment="Left" Height="23" Margin="128,80,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Країна:" HorizontalAlignment="Left" Margin="57,122,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пора року" FontSize="15" Margin="415,23,85,237" />
+        <RadioButton Name="One" IsChecked="True" Content="Літо" HorizontalAlignment="Left" Margin="415,66,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="Two" Content="Зима" HorizontalAlignment="Left" Margin="415,93,0,0" VerticalAlignment="Top"/>
+        <CheckBox  Name="Wind" Content="З гідом" HorizontalAlignment="Left" Margin="419,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="Вартість:" FontSize="18" HorizontalAlignment="Left" Margin="60,191,0,0" VerticalAlignment="Top"/>
+        <Label Name="Suma" Content="0 грн." FontSize="18" HorizontalAlignment="Left" Margin="141,191,0,0" VerticalAlignment="Top"/>
+        <Button Click="Button_Click" Content="Розрахувати" FontSize="15" HorizontalAlignment="Left" Margin="389,181,0,0" VerticalAlignment="Top" Width="98" Height="34"/>
+        <StackPanel Margin="12,120,-2,144" >
+            <ComboBox x:Name="Combo" Margin="119,0,374.4,0" Height="25" >
+                <ComboBoxItem IsSelected="True" Content="Болгарія"/>
+                <ComboBoxItem Content="Німеччина"/>
+                <ComboBoxItem Content="Польща"/>
             </ComboBox>
         </StackPanel>
 

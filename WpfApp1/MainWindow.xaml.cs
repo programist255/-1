@@ -25,43 +25,42 @@ namespace WpfApp1
             InitializeComponent();
         }
         public double Sum = 0;
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Sum = Convert.ToDouble(Width.Text) * Convert.ToDouble(Height.Text);
-            if(Combo.SelectedIndex == 0 && One.IsChecked == true)
+            
+            if (Combo.SelectedIndex == 0 && One.IsChecked == true)
             {
-                Sum *= 0.25;
+                Sum = Convert.ToDouble(Width.Text) * 100;
             }
             if (Combo.SelectedIndex == 0 && Two.IsChecked == true)
             {
-                Sum *= 0.30;
+                Sum = Convert.ToDouble(Width.Text) * 150;
             }
 
             if (Combo.SelectedIndex == 1 && One.IsChecked == true)
             {
-                Sum *= 0.05;
+                Sum = Convert.ToDouble(Width.Text) * 160;
             }
             if (Combo.SelectedIndex == 1 && Two.IsChecked == true)
             {
-                Sum *= 0.10;
+                Sum = Convert.ToDouble(Width.Text) * 200;
             }
 
             if (Combo.SelectedIndex == 1 && One.IsChecked == true)
             {
-                Sum *= 0.15;
+                Sum = Convert.ToDouble(Width.Text) * 120;
             }
             if (Combo.SelectedIndex == 1 && Two.IsChecked == true)
             {
-                Sum *= 0.20;
+                Sum = Convert.ToDouble(Width.Text) * 180;
             }
-
-            if(Wind.IsChecked == true)
+            if (Wind.IsChecked == true)
             {
-                Sum += 35;
+                Sum += 50 * Convert.ToDouble(Width.Text);
             }
-            
 
-            Suma.Content = Sum + " грн.";
+            Suma.Content = Sum + "$";
 
         }
     }
